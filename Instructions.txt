@@ -1,3 +1,6 @@
-Creation of Instances:
-	1. Every geometry instance should be created INBETWEEN Canvas::Figure2::Begin() and Canvas::Figure2::End() instructions;
-	2. Every instance should be created on the HEAP (using "new" keyword) and will be deleted automatically after the main window is terminated;
+Before Started:
+	1. 
+About Geometry Figure Instances:
+	1. Every instance should be created INBETWEEN Canvas::Figure2::Begin() and Canvas::Figure2::End() instructions;
+	2. Every instance should be created on the HEAP and will be deleted automatically after the main window is terminated;
+	3. Addresses of all points will be stored inside Canvas::Figure2::Points[512] but NOT guaranteed to be in creation order. (Same for other instances)
